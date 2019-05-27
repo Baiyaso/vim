@@ -32,6 +32,8 @@ function MyDiff()
   endif
 endfunction
 
+set t_Co=256    "¿ªÆô256É«
+
 set nocompatible              "¹Ø±Õvi¼æÈİ  
 set incsearch	"Õâ¸öÃüÁîÊ¹ Vim ÔÚÄãÊäÈë×Ö·û´®µÄ¹ı³ÌÖĞ¾ÍÏÔÊ¾Æ¥Åäµã¡£
 		"ÓÃÕâ¸ö¹¦ÄÜ¿ÉÒÔ¼ì²éÊÇ·ñ»á±»ÕÒµ½ÕıÈ·µÄÆ¥Åä£¬ÕâÊ±ÊäÈë <Enter> ¾Í¿ÉÒÔÕæÕıµØÌøµ½ÄÇ¸öµØ·½¡£
@@ -39,8 +41,8 @@ set incsearch	"Õâ¸öÃüÁîÊ¹ Vim ÔÚÄãÊäÈë×Ö·û´®µÄ¹ı³ÌÖĞ¾ÍÏÔÊ¾Æ¥Åäµã¡£
  set autoindent	"ÕâÊ¹ Vim ÔÚÆô¶¯Ò»¸öĞÂĞĞµÄÊ±ºòÊ¹ÓÃÓëÇ°Ò»ĞĞÒ»ÑùµÄËõ½ø¡£¾ÍÊÇËµ£¬ĞÂĞĞÇ°Ãæ»áÓĞÍ¬Ñù¶àµÄ¿Õ°××Ö·û¡£
 		"Æô¶¯ĞÂĞĞÊÇÖ¸ÓÃ <Enter> »»ĞĞ£¬ÔÚÆÕÍ¨Ä£Ê½ÏÂÖ´ĞĞ "o" ÃüÁîµÈÇé¿ö¡£
 
-set lines=40 columns=165	"
-set guifont=Ubuntu_Mono:h22	"
+set lines=22 columns=95	"
+set guifont=Consolas:h20	"
 set winaltkeys=no
 set number		"	
 syntax on			"
@@ -48,7 +50,7 @@ filetype plugin indent on	"
 set mouse=a
 set showcmd		"
 set ruler
-set cmdheight=2
+set cmdheight=1
 set showmatch		"
 
 set  cindent shiftwidth=4	"cindentÎªCÓïÑÔµÄËõ½øÉèÖÃ£¬Í¨¹ı 'shiftwidth' Ñ¡Ïî£¬Äã¿ÉÒÔÖ¸¶¨ÏÂÒ»¼¶µÄËõ½ø¿Õ¸ñÊı¡£4 ¸ö¿Õ¸ñµÄĞ§¹ûºÜºÃ¡£
@@ -65,15 +67,16 @@ set  cindent shiftwidth=4	"cindentÎªCÓïÑÔµÄËõ½øÉèÖÃ£¬Í¨¹ı 'shiftwidth' Ñ¡Ïî£¬Äã¿
 "ÇëÊ¹ÓÃÕâ¸öÃüÁî:    :set cinoptions+={2
 set smartindent "CÓïÑÔµÄËõ½øÉèÖÃ
 set tabstop=4	" Tab¼üµÄ¿í¶È
-"set shiftwidth=4
+"set shiftwidth=4   "°´ÏÂ>> << ==Ê±Ëù³öÏÖµÄ×Ö·ûÊı
 set expandtab   "ÓÃ¿Õ¸ñ´úÌæTab
 
 "set noexpandtab	" ²»ÒªÓÃ¿Õ¸ñ´úÌæÖÆ±í·û
-"set softtabstop=2	" Í³Ò»Ëõ½øÎª4
+"set softtabstop=2	"tap×ªÎª¶àÉÙ¸ö¿Õ¸ñ 
 
 set backspace=2	"ÍË¸ñ¼üÕı³£Ä£Ê½	"
 set backspace=eol,start,indent  "ÄÜÉ¾³ıµ½ÉÏÒ»ĞĞ
 "set whichwrap+=<,>,h,l	"ÔÊĞíbackspaceºÍ¹â±ê¼ü¿çÔ½ĞĞ±ß½ç
+set nowrap  "¹Ø±Õ×Ô¶¯ÕÛĞĞ
 
 "inoremap ' ''<ESC>i
 "inoremap " ""<ESC>i
@@ -83,23 +86,52 @@ set backspace=eol,start,indent  "ÄÜÉ¾³ıµ½ÉÏÒ»ĞĞ
 
 "set nobackup
 "set noundofile
+set nobackup    "È¡Ïû±¸·İ
 set backupdir=$Vim\backup   "±¸·İÎÄ¼ş¼ĞÉèÖÃ
 set undodir=$Vim\backup
 
 set guioptions-=T
 
-
 set encoding=utf-8
+set fileencoding=utf-8  "Ô­±¾ÓÃµÄÊÇencoding=utf-8,²Ëµ¥»á³öÏÖÂÒÂë,encodingÊÇvimÄÚ²¿ÓÃµÄ±àÂë·½Ê½,ÏÂ±ßÓĞĞÂµÄ½â¾ö·½·¨
+
+
+"set gfw=ºÚÌå
 set guioptions-=m 
+set guioptions-=r "Òş²Ø¹ö¶¯Ìõ
+
+"½â¾ö²Ëµ¥ÂÒÂë
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+"½â¾öconsleÊä³öÂÒÂë
+language messages zh_CN.utf-8
+
 
 set cursorline	"¸ßÁÁÏÔÊ¾µ±Ç°ĞĞ
 "set cursorcolumn	"ÁĞ
-colorscheme zellner
-
+"colorscheme zellner
+colorscheme  molokai
 "set fileencoding=utf-8,gbk
 "set langmenu=zh_CN.ansi 
 "set fileencodings=utf-8,gb2312,gbk,gb18030
 "set softtabstop=4 " Ê¹µÃ°´ÍË¸ñ¼üÊ±¿ÉÒÔÒ»´ÎÉ¾µô 4 ¸ö¿Õ¸ñ
 "
 "set background=dark
+set wildmenu
+set wildmode=longest:list,full  "ÃüÁîÄ£Ê½tap×Ô¶¯²¹È«
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'lervag/vimtex'
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+Plug 'sirver/ultisnips'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+Plug 'bling/vim-airline'
+call plug#end()
 
