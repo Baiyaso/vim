@@ -1,3 +1,14 @@
+"vim+latex:
+"要有Latex工具,现在用的是miktex,要安装完整使latexmk能正常运行,vimtex需要用latexmk编译
+"要装perl,latex好像要用
+"python2.7 or py3,那个ultisnips要用
+"要从网上下一个plug.vim插件管理器放到autoload目录里
+"用这个插件管理器,该文件下边有配置的命令,然后打开vim,输入PlugInstall就会安装,安装目录在用户目录的.vim文件夹下
+"用这个插件管理器安装下面的三个插件
+"安装mupdf或vimtex安装目录下的readme里能直接支持的pdf阅读器,下边命令里可以改,要用小写字母
+"直接输入\ll启动vimtex的编译,再输入关闭编译,保存后,在pdf阅读器里按r刷新
+"现在用的这个主题,要下载,并放入colors文件夹内
+"
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -42,7 +53,7 @@ set incsearch	"这个命令使 Vim 在你输入字符串的过程中就显示匹配点。
 		"启动新行是指用 <Enter> 换行，在普通模式下执行 "o" 命令等情况。
 
 set lines=22 columns=95	"
-set guifont=Consolas:h20	"
+set guifont=Consolas:h21	"
 set winaltkeys=no
 set number		"	
 syntax on			"
@@ -110,7 +121,18 @@ language messages zh_CN.utf-8
 set cursorline	"高亮显示当前行
 "set cursorcolumn	"列
 "colorscheme zellner
-colorscheme  molokai
+"colorscheme  molokai
+"let g:molokai_original=1
+"let g:rehash256=1
+
+let g:solarized_termcolors=256
+colorscheme solarized
+set background=dark
+
+"colorscheme space-vim-dark
+"let g:space_vim_dark_background = 234
+"color space-vim-dark
+
 "set fileencoding=utf-8,gbk
 "set langmenu=zh_CN.ansi 
 "set fileencodings=utf-8,gb2312,gbk,gb18030
@@ -124,7 +146,7 @@ set wildmode=longest:list,full  "命令模式tap自动补全
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
+let g:vimtex_view_method='mupdf'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
