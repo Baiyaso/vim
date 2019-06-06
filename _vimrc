@@ -8,7 +8,10 @@
 "安装mupdf或vimtex安装目录下的readme里能直接支持的pdf阅读器,下边命令里可以改,要用小写字母
 "直接输入\ll启动vimtex的编译,再输入关闭编译,保存后,在pdf阅读器里按r刷新
 "现在用的这个主题,要下载,并放入colors文件夹内
-"
+"安装ultisnips使用不仅要用python还要有vim-snippets库,下边有一个这样的库,也要用PlugInstall安装
+"下边用vim-plug安装的都在~/.vim/下,vim-snippets里有一个Ultisnips文件夹,里边有snippet文件
+"vim-snippets里的文件别改,会出问题,在ultisnips文件夹里建立一个Ultisnips文件夹,把vim-snippets里的文件复制过去再修改
+"latex实时预览要求有vim自动保存,latexmk的连续编译,pdf阅读器自动刷新
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -54,6 +57,7 @@ set incsearch	"这个命令使 Vim 在你输入字符串的过程中就显示匹配点。
 
 set lines=22 columns=95	"
 set guifont=Consolas:h21	"
+set guifontwide=Consolas:h18    "这样分别设置中英文字体,windows下不能用非等宽字体，要用还要重新编译vim,这里用注册表法,改了systemlink中Consolas的字体,加入了msys使其有不一样的中文字体
 set winaltkeys=no
 set number		"	
 syntax on			"
@@ -109,7 +113,7 @@ set fileencoding=utf-8  "原本用的是encoding=utf-8,菜单会出现乱码,encoding是vim内
 
 "set gfw=黑体
 set guioptions-=m 
-set guioptions-=r "隐藏滚动条
+"set guioptions-=r "隐藏滚动条
 
 "解决菜单乱码
 source $VIMRUNTIME/delmenu.vim
@@ -143,17 +147,37 @@ set wildmenu
 set wildmode=longest:list,full  "命令模式tap自动补全
 
 
+"autocmd Filetype tex setl updatetime=1     "刷新tex文件，好像没啥用
+"set autoread       "自动读已经被修改的文件
 call plug#begin('~/.vim/plugged')
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
-let g:vimtex_view_method='mupdf'
-let g:vimtex_quickfix_mode=0
+let g:vimtex_view_general_viewer='sumatrapdf'   "这样可以用一些更复杂的pdf阅读器
+"let g:vimtex_view_method='mupdf'   "这个可以用一些mupdf skim Zathura
+let g:vimtex_quickfix_mode=0    "这个好像是下边一行出现的连续编译开启的编译提示模式设置
 set conceallevel=1
 let g:tex_conceal='abdmg'
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-xelatex',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
 Plug 'sirver/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+"let g:UltiSnipsListSnippets="<c-e>"
+"let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"    用不到了
+"不要在vim-snippets中预备好的各语言snippets上直接修改，因为每次更新都会被覆盖。
+"必须在ultisnips文件夹下创建一个UltiSnips文件夹，所有自定义代码都存在这里。
 Plug 'bling/vim-airline'
+Plug 'honza/vim-snippets'
+Plug '907th/vim-auto-save'
+let g:auto_save = 1
+let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI", "CursorHoldI", "CompleteDone"]
+Plug 'plasticboy/vim-markdown'
 call plug#end()
-
