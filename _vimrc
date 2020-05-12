@@ -1,17 +1,17 @@
 "vim+latex:
-"ÒªÓĞLatex¹¤¾ß,ÏÖÔÚÓÃµÄÊÇmiktex,Òª°²×°ÍêÕûÊ¹latexmkÄÜÕı³£ÔËĞĞ,vimtexĞèÒªÓÃlatexmk±àÒë
-"Òª×°perl,latexºÃÏñÒªÓÃ
-"python2.7 or py3,ÄÇ¸öultisnipsÒªÓÃ
-"Òª´ÓÍøÉÏÏÂÒ»¸öplug.vim²å¼ş¹ÜÀíÆ÷·Åµ½autoloadÄ¿Â¼Àï
-"ÓÃÕâ¸ö²å¼ş¹ÜÀíÆ÷,¸ÃÎÄ¼şÏÂ±ßÓĞÅäÖÃµÄÃüÁî,È»ºó´ò¿ªvim,ÊäÈëPlugInstall¾Í»á°²×°,°²×°Ä¿Â¼ÔÚÓÃ»§Ä¿Â¼µÄ.vimÎÄ¼ş¼ĞÏÂ
-"ÓÃÕâ¸ö²å¼ş¹ÜÀíÆ÷°²×°ÏÂÃæµÄÈı¸ö²å¼ş
-"°²×°mupdf»òvimtex°²×°Ä¿Â¼ÏÂµÄreadmeÀïÄÜÖ±½ÓÖ§³ÖµÄpdfÔÄ¶ÁÆ÷,ÏÂ±ßÃüÁîÀï¿ÉÒÔ¸Ä,ÒªÓÃĞ¡Ğ´×ÖÄ¸
-"Ö±½ÓÊäÈë\llÆô¶¯vimtexµÄ±àÒë,ÔÙÊäÈë¹Ø±Õ±àÒë,±£´æºó,ÔÚpdfÔÄ¶ÁÆ÷Àï°´rË¢ĞÂ
-"ÏÖÔÚÓÃµÄÕâ¸öÖ÷Ìâ,ÒªÏÂÔØ,²¢·ÅÈëcolorsÎÄ¼ş¼ĞÄÚ
-"°²×°ultisnipsÊ¹ÓÃ²»½öÒªÓÃpython»¹ÒªÓĞvim-snippets¿â,ÏÂ±ßÓĞÒ»¸öÕâÑùµÄ¿â,Ò²ÒªÓÃPlugInstall°²×°
-"ÏÂ±ßÓÃvim-plug°²×°µÄ¶¼ÔÚ~/.vim/ÏÂ,vim-snippetsÀïÓĞÒ»¸öUltisnipsÎÄ¼ş¼Ğ,Àï±ßÓĞsnippetÎÄ¼ş
-"vim-snippetsÀïµÄÎÄ¼ş±ğ¸Ä,»á³öÎÊÌâ,ÔÚultisnipsÎÄ¼ş¼ĞÀï½¨Á¢Ò»¸öUltisnipsÎÄ¼ş¼Ğ,°Ñvim-snippetsÀïµÄÎÄ¼ş¸´ÖÆ¹ıÈ¥ÔÙĞŞ¸Ä
-"latexÊµÊ±Ô¤ÀÀÒªÇóÓĞvim×Ô¶¯±£´æ,latexmkµÄÁ¬Ğø±àÒë,pdfÔÄ¶ÁÆ÷×Ô¶¯Ë¢ĞÂ
+"è¦æœ‰Latexå·¥å…·,ç°åœ¨ç”¨çš„æ˜¯miktex,è¦å®‰è£…å®Œæ•´ä½¿latexmkèƒ½æ­£å¸¸è¿è¡Œ,vimtexéœ€è¦ç”¨latexmkç¼–è¯‘
+"è¦è£…perl,latexå¥½åƒè¦ç”¨
+"python2.7 or py3,é‚£ä¸ªultisnipsè¦ç”¨
+"è¦ä»ç½‘ä¸Šä¸‹ä¸€ä¸ªplug.vimæ’ä»¶ç®¡ç†å™¨æ”¾åˆ°autoloadç›®å½•é‡Œ
+"ç”¨è¿™ä¸ªæ’ä»¶ç®¡ç†å™¨,è¯¥æ–‡ä»¶ä¸‹è¾¹æœ‰é…ç½®çš„å‘½ä»¤,ç„¶åæ‰“å¼€vim,è¾“å…¥PlugInstallå°±ä¼šå®‰è£…,å®‰è£…ç›®å½•åœ¨ç”¨æˆ·ç›®å½•çš„.vimæ–‡ä»¶å¤¹ä¸‹
+"ç”¨è¿™ä¸ªæ’ä»¶ç®¡ç†å™¨å®‰è£…ä¸‹é¢çš„ä¸‰ä¸ªæ’ä»¶
+"å®‰è£…mupdfæˆ–vimtexå®‰è£…ç›®å½•ä¸‹çš„readmeé‡Œèƒ½ç›´æ¥æ”¯æŒçš„pdfé˜…è¯»å™¨,ä¸‹è¾¹å‘½ä»¤é‡Œå¯ä»¥æ”¹,è¦ç”¨å°å†™å­—æ¯
+"ç›´æ¥è¾“å…¥\llå¯åŠ¨vimtexçš„ç¼–è¯‘,å†è¾“å…¥å…³é—­ç¼–è¯‘,ä¿å­˜å,åœ¨pdfé˜…è¯»å™¨é‡ŒæŒ‰råˆ·æ–°
+"ç°åœ¨ç”¨çš„è¿™ä¸ªä¸»é¢˜,è¦ä¸‹è½½,å¹¶æ”¾å…¥colorsæ–‡ä»¶å¤¹å†…
+"å®‰è£…ultisnipsä½¿ç”¨ä¸ä»…è¦ç”¨pythonè¿˜è¦æœ‰vim-snippetsåº“,ä¸‹è¾¹æœ‰ä¸€ä¸ªè¿™æ ·çš„åº“,ä¹Ÿè¦ç”¨PlugInstallå®‰è£…
+"ä¸‹è¾¹ç”¨vim-plugå®‰è£…çš„éƒ½åœ¨~/.vim/ä¸‹,vim-snippetsé‡Œæœ‰ä¸€ä¸ªUltisnipsæ–‡ä»¶å¤¹,é‡Œè¾¹æœ‰snippetæ–‡ä»¶
+"vim-snippetsé‡Œçš„æ–‡ä»¶åˆ«æ”¹,ä¼šå‡ºé—®é¢˜,åœ¨ultisnipsæ–‡ä»¶å¤¹é‡Œå»ºç«‹ä¸€ä¸ªUltisnipsæ–‡ä»¶å¤¹,æŠŠvim-snippetsé‡Œçš„æ–‡ä»¶å¤åˆ¶è¿‡å»(åæ¥å‘ç°åˆ«å¤åˆ¶è¿‡å»ï¼Œä¼šå¯¼è‡´é‡å¤å®šä¹‰è€Œè¿˜è¦åœ¨ç”¨çš„æ—¶å€™åšå‡ºé€‰æ‹©ï¼Œæ·»åŠ æ–°çš„å†åˆ›å»º)å†ä¿®æ”¹
+"latexå®æ—¶é¢„è§ˆè¦æ±‚æœ‰vimè‡ªåŠ¨ä¿å­˜,latexmkçš„è¿ç»­ç¼–è¯‘,pdfé˜…è¯»å™¨è‡ªåŠ¨åˆ·æ–°
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -46,18 +46,26 @@ function MyDiff()
   endif
 endfunction
 
-set t_Co=256    "¿ªÆô256É«
 
-set nocompatible              "¹Ø±Õvi¼æÈİ  
-set incsearch	"Õâ¸öÃüÁîÊ¹ Vim ÔÚÄãÊäÈë×Ö·û´®µÄ¹ı³ÌÖĞ¾ÍÏÔÊ¾Æ¥Åäµã¡£
-		"ÓÃÕâ¸ö¹¦ÄÜ¿ÉÒÔ¼ì²éÊÇ·ñ»á±»ÕÒµ½ÕıÈ·µÄÆ¥Åä£¬ÕâÊ±ÊäÈë <Enter> ¾Í¿ÉÒÔÕæÕıµØÌøµ½ÄÇ¸öµØ·½¡£
-		"·ñÔò£¬¼ÌĞøÊäÈë¸ü¶àµÄ×Ö·û¿ÉÒÔĞŞ¸ÄÒª²éÕÒµÄ×Ö·û´®¡£
- set autoindent	"ÕâÊ¹ Vim ÔÚÆô¶¯Ò»¸öĞÂĞĞµÄÊ±ºòÊ¹ÓÃÓëÇ°Ò»ĞĞÒ»ÑùµÄËõ½ø¡£¾ÍÊÇËµ£¬ĞÂĞĞÇ°Ãæ»áÓĞÍ¬Ñù¶àµÄ¿Õ°××Ö·û¡£
-		"Æô¶¯ĞÂĞĞÊÇÖ¸ÓÃ <Enter> »»ĞĞ£¬ÔÚÆÕÍ¨Ä£Ê½ÏÂÖ´ĞĞ "o" ÃüÁîµÈÇé¿ö¡£
+"è¿™é‡Œæœ‰ä¸ª Vim çš„æ‰©å±•ï¼ˆä¸æ˜¯æ’ä»¶ï¼‰ï¼Œé¦–å…ˆåœ¨https://github.com/xqin/gvimfullscreenä¸‹è½½ä¸€ä¸ªdllï¼Œ
+"ç„¶åå°†è¿™ä¸ª dll æ–‡ä»¶æ‰”åˆ° gvim.exe æ‰€åœ¨çš„ç›®å½•ï¼ˆä¹Ÿå°±æ˜¯å®‰è£…ç›®å½•ï¼‰ã€‚
+"ç„¶åé€šè¿‡ gVim å†…ç½®çš„å‘½ä»¤è°ƒç”¨è¿™ä¸ª dll ä¸­çš„æ¥å£ï¼Œå°±å¯ä»¥è¾¾åˆ°çª—å£æœ€å¤§åŒ–äº†
+map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+"è¿™é‡Œé€šè¿‡æ˜ å°„æŠŠå‘½ä»¤æ˜ å°„åˆ°F11ä¸Š
+
+
+set t_Co=256    "å¼€å¯256è‰²
+
+set nocompatible              "å…³é—­viå…¼å®¹  
+set incsearch	"è¿™ä¸ªå‘½ä»¤ä½¿ Vim åœ¨ä½ è¾“å…¥å­—ç¬¦ä¸²çš„è¿‡ç¨‹ä¸­å°±æ˜¾ç¤ºåŒ¹é…ç‚¹ã€‚
+		"ç”¨è¿™ä¸ªåŠŸèƒ½å¯ä»¥æ£€æŸ¥æ˜¯å¦ä¼šè¢«æ‰¾åˆ°æ­£ç¡®çš„åŒ¹é…ï¼Œè¿™æ—¶è¾“å…¥ <Enter> å°±å¯ä»¥çœŸæ­£åœ°è·³åˆ°é‚£ä¸ªåœ°æ–¹ã€‚
+		"å¦åˆ™ï¼Œç»§ç»­è¾“å…¥æ›´å¤šçš„å­—ç¬¦å¯ä»¥ä¿®æ”¹è¦æŸ¥æ‰¾çš„å­—ç¬¦ä¸²ã€‚
+ set autoindent	"è¿™ä½¿ Vim åœ¨å¯åŠ¨ä¸€ä¸ªæ–°è¡Œçš„æ—¶å€™ä½¿ç”¨ä¸å‰ä¸€è¡Œä¸€æ ·çš„ç¼©è¿›ã€‚å°±æ˜¯è¯´ï¼Œæ–°è¡Œå‰é¢ä¼šæœ‰åŒæ ·å¤šçš„ç©ºç™½å­—ç¬¦ã€‚
+		"å¯åŠ¨æ–°è¡Œæ˜¯æŒ‡ç”¨ <Enter> æ¢è¡Œï¼Œåœ¨æ™®é€šæ¨¡å¼ä¸‹æ‰§è¡Œ "o" å‘½ä»¤ç­‰æƒ…å†µã€‚
 
 set lines=22 columns=95	"
-set guifont=Consolas:h21	"
-set guifontwide=Consolas:h18    "ÕâÑù·Ö±ğÉèÖÃÖĞÓ¢ÎÄ×ÖÌå,windowsÏÂ²»ÄÜÓÃ·ÇµÈ¿í×ÖÌå£¬ÒªÓÃ»¹ÒªÖØĞÂ±àÒëvim,ÕâÀïÓÃ×¢²á±í·¨,¸ÄÁËsystemlinkÖĞConsolasµÄ×ÖÌå,¼ÓÈëÁËmsysÊ¹ÆäÓĞ²»Ò»ÑùµÄÖĞÎÄ×ÖÌå
+set guifont=Consolas\ for\ Powerline\ FixedD:h21	"
+set guifontwide=Courier_Std:h20    "è¿™æ ·åˆ†åˆ«è®¾ç½®ä¸­è‹±æ–‡å­—ä½“,windowsä¸‹ä¸èƒ½ç”¨éç­‰å®½å­—ä½“ï¼Œè¦ç”¨è¿˜è¦é‡æ–°ç¼–è¯‘vim,è¿™é‡Œç”¨æ³¨å†Œè¡¨æ³•,æ”¹äº†systemlinkä¸­Consolasï¼ˆåˆæ”¹æˆäº†Courier Stdï¼‰çš„å­—ä½“,åŠ å…¥äº†msysä½¿å…¶æœ‰ä¸ä¸€æ ·çš„ä¸­æ–‡å­—ä½“
 set winaltkeys=no
 set number		"	
 syntax on			"
@@ -68,69 +76,79 @@ set ruler
 set cmdheight=1
 set showmatch		"
 
-set  cindent shiftwidth=4	"cindentÎªCÓïÑÔµÄËõ½øÉèÖÃ£¬Í¨¹ı 'shiftwidth' Ñ¡Ïî£¬Äã¿ÉÒÔÖ¸¶¨ÏÂÒ»¼¶µÄËõ½ø¿Õ¸ñÊı¡£4 ¸ö¿Õ¸ñµÄĞ§¹ûºÜºÃ¡£
+set  cindent shiftwidth=4	"cindentä¸ºCè¯­è¨€çš„ç¼©è¿›è®¾ç½®ï¼Œé€šè¿‡ 'shiftwidth' é€‰é¡¹ï¼Œä½ å¯ä»¥æŒ‡å®šä¸‹ä¸€çº§çš„ç¼©è¿›ç©ºæ ¼æ•°ã€‚4 ä¸ªç©ºæ ¼çš„æ•ˆæœå¾ˆå¥½ã€‚
 "set cinoptions+={0
-"²»Í¬µÄÈËÓĞ²»Í¬µÄËõ½ø·ç¸ñ¡£ÔÚÄ¬ÈÏÇé¿öÏÂ£¬Vim ²ÉÓÃÁË 90% µÄ³ÌĞòÔ±¶¼Ê¹ÓÃµÄÒ»ÖÖ·½
-"Ê½²¢ÄÜºÜºÃµØÍê³É¹¤×÷¡£µ«ÊÇ£¬Èç¹ûÄãÏëÊ¹ÓÃÆäËüµÄ·ç¸ñ£¬Äã¿ÉÒÔÍ¨¹ı 'cinoptions' Ñ¡
-"ÏîÀ´Éè¶¨¡£ 'cinoptions' Ä¬ÈÏÎª¿Õ£¬Vim »áÊ¹ÓÃÄ¬ÈÏ·ç¸ñ¡£Äã¿ÉÒÔÔÚÄãÏ£Íû¸Ä±äµÄµØ·½Ìí¼ÓÏàÓ¦
-"µÄÏîÄ¿¡£ÀıÈç£¬ÒªÊ¹´óÀ¨ºÅµÄËõ½øÈçÏÂËùÊ¾:
+"ä¸åŒçš„äººæœ‰ä¸åŒçš„ç¼©è¿›é£æ ¼ã€‚åœ¨é»˜è®¤æƒ…å†µä¸‹ï¼ŒVim é‡‡ç”¨äº† 90% çš„ç¨‹åºå‘˜éƒ½ä½¿ç”¨çš„ä¸€ç§æ–¹
+"å¼å¹¶èƒ½å¾ˆå¥½åœ°å®Œæˆå·¥ä½œã€‚ä½†æ˜¯ï¼Œå¦‚æœä½ æƒ³ä½¿ç”¨å…¶å®ƒçš„é£æ ¼ï¼Œä½ å¯ä»¥é€šè¿‡ 'cinoptions' é€‰
+"é¡¹æ¥è®¾å®šã€‚ 'cinoptions' é»˜è®¤ä¸ºç©ºï¼ŒVim ä¼šä½¿ç”¨é»˜è®¤é£æ ¼ã€‚ä½ å¯ä»¥åœ¨ä½ å¸Œæœ›æ”¹å˜çš„åœ°æ–¹æ·»åŠ ç›¸åº”
+"çš„é¡¹ç›®ã€‚ä¾‹å¦‚ï¼Œè¦ä½¿å¤§æ‹¬å·çš„ç¼©è¿›å¦‚ä¸‹æ‰€ç¤º:
   "      if (flag) 
     "      { 
       "      i = 8; 
         "    j = 0; 
           "} 
-"ÇëÊ¹ÓÃÕâ¸öÃüÁî:    :set cinoptions+={2
-set smartindent "CÓïÑÔµÄËõ½øÉèÖÃ
-set tabstop=4	" Tab¼üµÄ¿í¶È
-"set shiftwidth=4   "°´ÏÂ>> << ==Ê±Ëù³öÏÖµÄ×Ö·ûÊı
-set expandtab   "ÓÃ¿Õ¸ñ´úÌæTab
+"è¯·ä½¿ç”¨è¿™ä¸ªå‘½ä»¤:    :set cinoptions+={2
+set smartindent "Cè¯­è¨€çš„ç¼©è¿›è®¾ç½®
+set tabstop=4	" Tabé”®çš„å®½åº¦
+"set shiftwidth=4   "æŒ‰ä¸‹>> << ==æ—¶æ‰€å‡ºç°çš„å­—ç¬¦æ•°
+set expandtab   "ç”¨ç©ºæ ¼ä»£æ›¿Tab
 
-"set noexpandtab	" ²»ÒªÓÃ¿Õ¸ñ´úÌæÖÆ±í·û
-"set softtabstop=2	"tap×ªÎª¶àÉÙ¸ö¿Õ¸ñ 
+"set noexpandtab	" ä¸è¦ç”¨ç©ºæ ¼ä»£æ›¿åˆ¶è¡¨ç¬¦
+"set softtabstop=2	"tapè½¬ä¸ºå¤šå°‘ä¸ªç©ºæ ¼ 
 
-set backspace=2	"ÍË¸ñ¼üÕı³£Ä£Ê½	"
-set backspace=eol,start,indent  "ÄÜÉ¾³ıµ½ÉÏÒ»ĞĞ
-"set whichwrap+=<,>,h,l	"ÔÊĞíbackspaceºÍ¹â±ê¼ü¿çÔ½ĞĞ±ß½ç
-set nowrap  "¹Ø±Õ×Ô¶¯ÕÛĞĞ
+set backspace=2	"é€€æ ¼é”®æ­£å¸¸æ¨¡å¼	"
+set backspace=eol,start,indent  "èƒ½åˆ é™¤åˆ°ä¸Šä¸€è¡Œ
+"set whichwrap+=<,>,h,l	"å…è®¸backspaceå’Œå…‰æ ‡é”®è·¨è¶Šè¡Œè¾¹ç•Œ
+set nowrap  "å…³é—­è‡ªåŠ¨æŠ˜è¡Œ
 
 "inoremap ' ''<ESC>i
 "inoremap " ""<ESC>i
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
-"inoremap { {<CR>}<ESC>O	"ÆäÖĞ»¨À¨ºÅ{ÉèÖÃ£¬×Ô¶¯²¹È«²¢»»ĞĞËõ½ø£¬ÕâÔÚĞ´º¯ÊıµÄÊ±ºò»òÓï¾ä¿éµÄÊ±ºòÌØ±ğÓĞÓÃ¡£
+"inoremap { {<CR>}<ESC>O	"å…¶ä¸­èŠ±æ‹¬å·{è®¾ç½®ï¼Œè‡ªåŠ¨è¡¥å…¨å¹¶æ¢è¡Œç¼©è¿›ï¼Œè¿™åœ¨å†™å‡½æ•°çš„æ—¶å€™æˆ–è¯­å¥å—çš„æ—¶å€™ç‰¹åˆ«æœ‰ç”¨ã€‚
 
 "set nobackup
 "set noundofile
-set nobackup    "È¡Ïû±¸·İ
-set backupdir=$Vim\backup   "±¸·İÎÄ¼ş¼ĞÉèÖÃ
+set nobackup    "å–æ¶ˆå¤‡ä»½
+set backupdir=$Vim\backup   "å¤‡ä»½æ–‡ä»¶å¤¹è®¾ç½®
 set undodir=$Vim\backup
 
 set guioptions-=T
 
-set encoding=utf-8
-set fileencoding=utf-8  "Ô­±¾ÓÃµÄÊÇencoding=utf-8,²Ëµ¥»á³öÏÖÂÒÂë,encodingÊÇvimÄÚ²¿ÓÃµÄ±àÂë·½Ê½,ÏÂ±ßÓĞĞÂµÄ½â¾ö·½·¨
+set encoding=utf-8      "ç»è¿‡æµ‹è¯•æ˜¯è¿™ä¸€æ¡å‘½ä»¤ä½¿å‘½ä»¤è¡Œæ¨¡å¼ä¸‹çš„vimåˆšå¼€å§‹çš„â€œè¾“å…¥enteré”®ç»§ç»­â€ä¹±ç 
+set fileencoding=utf-8  "åŸæœ¬ç”¨çš„æ˜¯encoding=utf-8,èœå•ä¼šå‡ºç°ä¹±ç ,encodingæ˜¯vimå†…éƒ¨ç”¨çš„ç¼–ç æ–¹å¼,ä¸‹è¾¹æœ‰æ–°çš„è§£å†³æ–¹æ³•
 
 
-"set gfw=ºÚÌå
+"set gfw=é»‘ä½“
 set guioptions-=m 
-"set guioptions-=r "Òş²Ø¹ö¶¯Ìõ
+"set guioptions-=r "éšè—æ»šåŠ¨æ¡
 
-"½â¾ö²Ëµ¥ÂÒÂë
+"è§£å†³èœå•ä¹±ç 
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"½â¾öconsleÊä³öÂÒÂë
+"è§£å†³consleè¾“å‡ºä¹±ç 
+"set termencoding = cp936  
+"è®¾ç½®ä¸­æ–‡æç¤º
 language messages zh_CN.utf-8
+set ambiwidth=double    "è®¾ç½®åŒå­å®½æ˜¾ç¤º
 
 
-set cursorline	"¸ßÁÁÏÔÊ¾µ±Ç°ĞĞ
-"set cursorcolumn	"ÁĞ
+set cursorline	"é«˜äº®æ˜¾ç¤ºå½“å‰è¡Œ
+"set cursorcolumn	"åˆ—
 "colorscheme zellner
 "colorscheme  molokai
 "let g:molokai_original=1
 "let g:rehash256=1
 
-let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme gruvbox
+let g:gruvbox_contrast_dark="hard"
+
+"colorscheme seoul256
+"let g:seoul256_background = 233
+"colo seoul256
+
+"let g:solarized_termcolors=256
+"colorscheme solarized
 set background=dark
 
 "colorscheme space-vim-dark
@@ -140,21 +158,22 @@ set background=dark
 "set fileencoding=utf-8,gbk
 "set langmenu=zh_CN.ansi 
 "set fileencodings=utf-8,gb2312,gbk,gb18030
-"set softtabstop=4 " Ê¹µÃ°´ÍË¸ñ¼üÊ±¿ÉÒÔÒ»´ÎÉ¾µô 4 ¸ö¿Õ¸ñ
+"set softtabstop=4 " ä½¿å¾—æŒ‰é€€æ ¼é”®æ—¶å¯ä»¥ä¸€æ¬¡åˆ æ‰ 4 ä¸ªç©ºæ ¼
 "
 "set background=dark
 set wildmenu
-set wildmode=longest:list,full  "ÃüÁîÄ£Ê½tap×Ô¶¯²¹È«
+set wildmode=longest:list,full  "å‘½ä»¤æ¨¡å¼tapè‡ªåŠ¨è¡¥å…¨
 
 
-"autocmd Filetype tex setl updatetime=1     "Ë¢ĞÂtexÎÄ¼ş£¬ºÃÏñÃ»É¶ÓÃ
-"set autoread       "×Ô¶¯¶ÁÒÑ¾­±»ĞŞ¸ÄµÄÎÄ¼ş
+"autocmd Filetype tex setl updatetime=1     "åˆ·æ–°texæ–‡ä»¶ï¼Œå¥½åƒæ²¡å•¥ç”¨
+"set autoread       "è‡ªåŠ¨è¯»å·²ç»è¢«ä¿®æ”¹çš„æ–‡ä»¶
 call plug#begin('~/.vim/plugged')
+"æœ‰äº†plug.vimå°±å¯ä»¥ç”¨ä¸‹è¾¹çš„Plugè¯­å¥ï¼Œç®¡ç†æ’ä»¶ï¼Œå®ƒå®é™…å°±æ˜¯æŠŠé‚£äº›æ’ä»¶ä»GitHubä¸Šä¸‹åˆ°~\.vim\plugged\å†…ï¼Œåœ¨è¿™ä¸ªæ–‡ä»¶å¤¹é‡Œçš„æ’ä»¶æ–‡ä»¶å°±å¯ä»¥ç”¨äº†ï¼ˆæœ‰çš„ä¸è¡Œï¼Œå¦‚YCMéœ€è¦å†è¿›è¡Œå®‰è£…ï¼‰ï¼Œå†æŒ‰ç…§æ’ä»¶è¦æ±‚è¿›è¡Œå¼€å¯ï¼Œé…ç½®æ“ä½œï¼Œä¸»é¢˜æŠŠcoloræ–‡ä»¶åŠ ä¸‹æ–‡ä»¶å¤åˆ¶åˆ°å®‰è£…ç›®å½•çš„colorç›®å½•ä¸‹ï¼Œå°±å¯ä»¥ä½¿ç”¨æ’ä»¶äº†ã€‚
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
-let g:vimtex_view_general_viewer='sumatrapdf'   "ÕâÑù¿ÉÒÔÓÃÒ»Ğ©¸ü¸´ÔÓµÄpdfÔÄ¶ÁÆ÷
-"let g:vimtex_view_method='mupdf'   "Õâ¸ö¿ÉÒÔÓÃÒ»Ğ©mupdf skim Zathura
-let g:vimtex_quickfix_mode=0    "Õâ¸öºÃÏñÊÇÏÂ±ßÒ»ĞĞ³öÏÖµÄÁ¬Ğø±àÒë¿ªÆôµÄ±àÒëÌáÊ¾Ä£Ê½ÉèÖÃ
+let g:vimtex_view_general_viewer='sumatrapdf'   "è¿™æ ·å¯ä»¥ç”¨ä¸€äº›æ›´å¤æ‚çš„pdfé˜…è¯»å™¨
+"let g:vimtex_view_method='mupdf'   "è¿™ä¸ªå¯ä»¥ç”¨ä¸€äº›mupdf skim Zathura
+let g:vimtex_quickfix_mode=0    "è¿™ä¸ªå¥½åƒæ˜¯ä¸‹è¾¹ä¸€è¡Œå‡ºç°çš„è¿ç»­ç¼–è¯‘å¼€å¯çš„ç¼–è¯‘æç¤ºæ¨¡å¼è®¾ç½®
 set conceallevel=1
 let g:tex_conceal='abdmg'
 let g:vimtex_compiler_latexmk = {
@@ -171,13 +190,45 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 "let g:UltiSnipsListSnippets="<c-e>"
-"let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"    ÓÃ²»µ½ÁË
-"²»ÒªÔÚvim-snippetsÖĞÔ¤±¸ºÃµÄ¸÷ÓïÑÔsnippetsÉÏÖ±½ÓĞŞ¸Ä£¬ÒòÎªÃ¿´Î¸üĞÂ¶¼»á±»¸²¸Ç¡£
-"±ØĞëÔÚultisnipsÎÄ¼ş¼ĞÏÂ´´½¨Ò»¸öUltiSnipsÎÄ¼ş¼Ğ£¬ËùÓĞ×Ô¶¨Òå´úÂë¶¼´æÔÚÕâÀï¡£
+"let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"    ç”¨ä¸åˆ°äº†
+"ä¸è¦åœ¨vim-snippetsä¸­é¢„å¤‡å¥½çš„å„è¯­è¨€snippetsä¸Šç›´æ¥ä¿®æ”¹ï¼Œå› ä¸ºæ¯æ¬¡æ›´æ–°éƒ½ä¼šè¢«è¦†ç›–ã€‚
+"å¿…é¡»åœ¨ultisnipsæ–‡ä»¶å¤¹ä¸‹åˆ›å»ºä¸€ä¸ªUltiSnipsæ–‡ä»¶å¤¹ï¼Œæ‰€æœ‰è‡ªå®šä¹‰ä»£ç éƒ½å­˜åœ¨è¿™é‡Œã€‚
 Plug 'bling/vim-airline'
 Plug 'honza/vim-snippets'
 Plug '907th/vim-auto-save'
-let g:auto_save = 1
+let g:auto_save = 0 "è¿˜æ˜¯æŠŠä»–å…³äº†å§ï¼Œç­‰åˆ°å†™Latexç”¨çš„æ—¶å€™å†å¼€å¯
 let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI", "CursorHoldI", "CompleteDone"]
 Plug 'plasticboy/vim-markdown'
+Plug 'morhetz/gruvbox'  "å‘ç°gruvboxç­‰ä¸»é¢˜å¿…é¡»è¦æŠŠcoloræ–‡ä»¶å¤¹çš„æ–‡ä»¶æ”¾åˆ°vimå®‰è£…ç›®å½•çš„coloræ–‡ä»¶å¤¹ï¼Œæ‰èƒ½å¯ç”¨è¿™ä¸ªä¸»é¢˜
+"Plug 'junegunn/seoul256.vim'
+"Plug 'liuchengxu/eleline.vim'
+Plug 'vim-airline/vim-airline-themes'
+"let g:airline_powerline_fonts=1 
+if !exists('g:airline_symbols')
+let g:airline_symbols = {}
+endif
+
+set laststatus=2    "æŒç»­æ˜¾ç¤º
+let g:airline_theme='molokai'
+let g:airline#extensions#tabline#enabled = 1      "tablineä¸­å½“å‰bufferä¸¤ç«¯çš„åˆ†éš”å­—ç¬¦
+let g:airline#extensions#tabline#left_sep = ' '   "tablineä¸­æœªæ¿€æ´»bufferä¸¤ç«¯çš„åˆ†éš”å­—ç¬¦
+let g:airline#extensions#tabline#left_alt_sep = '|'      "tablineä¸­bufferæ˜¾ç¤ºç¼–å·
+let g:airline#extensions#tabline#buffer_nr_show = 1  
+let g:airline_powerline_fonts = 1   
+"è®¾ç½®äº†å¥½é•¿æ—¶é—´ç»ˆäºæ˜¯æˆåŠŸè®¾ç½®äº†airlineï¼Œ
+"æˆ‘æ˜ç™½äº†æ’ä»¶ç›®å½•çš„é‚£äº›æ’ä»¶æ–‡ä»¶å¤¹ä¸­çš„autoloadéƒ½æ˜¯ä¼šè‡ªåŠ¨åŠ è½½çš„
+"æˆ‘è¿˜ä¸‹è½½äº†ä¸€ä¸ªairline-themeæ’ä»¶ï¼Œé‡Œé¢æœ‰å¾ˆå¤šairlineçš„æ’ä»¶,é‚£ä¸ªgruvboxä¸­çš„airlineä¸»é¢˜ä¹Ÿèƒ½ç”¨
+"airlineæœ‰ä¸ªé—®é¢˜å°±æ˜¯ï¼Œä»–æœ‰äº›å­—ç¬¦ä¸€èˆ¬å­—ä½“æ— æ³•ç”¨ï¼Œè¿˜è¦ä¸‹è½½å‡ ä¸ªå­—ä½“å®‰è£…ï¼Œä¸Šç½‘æœç´¢å§
+"å®‰è£…å®Œåè¦ç”¨ä¸Šè¾¹çš„ä¸€ä¸ªæŒ‡ä»¤å¼€å¯ï¼Œè¿˜è¦ç”¨ä¸‹è¾¹çš„æŒ‡ä»¤è°ƒç”¨é‚£äº›å­—ç¬¦ä½¿airlineæ­£å¸¸æ˜¾ç¤º
+"è¿˜è¦ç”¨ä¸Šè¾¹çš„set guifontè®¾ç½®å­—ä½“ï¼Œçœ‹ä¸å¤ªæ‡‚ï¼Œset guifont=Consolas_for_Powerlineä¸è¡Œ
+let g:airline_left_sep = 'â®€'
+let g:airline_left_alt_sep = 'â®'
+let g:airline_right_sep = 'â®‚'
+let g:airline_right_alt_sep = 'â®ƒ'
+let g:airline_symbols.branch = 'â­ '
+let g:airline_symbols.readonly = 'â­¤'
+let g:airline_symbols.linenr = 'â­¡'
+"è®¾ç½®åˆ‡æ¢Bufferå¿«æ·é”®"
+ nnoremap <C-tab> :bn<CR>
+ nnoremap <C-s-tab> :bp<CR>
 call plug#end()
